@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+   <ItemGroup>
+      <PackageReference Include="JWT" Version="4.0.0" />
+   </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>HelloWorld</RootNamespace>
+  </PropertyGroup>
+
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU' or '$(Configuration)|$(Platform)'=='Debug|Any CPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU' or '$(Configuration)|$(Platform)'=='Release|Any CPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>
